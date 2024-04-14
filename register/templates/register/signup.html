@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="{% static 'css\signup.css'%}" />
+  <title>Singup</title>
+</head>
+
+<body>
+  <form class="container" role="form" aria-labelledby="formTitle" method="post">
+    {% csrf_token %}
+    <div class="card">
+      <h1 id="formTitle">Cadastrar</h1>
+
+      <div id="msgError" role="alert"></div>
+      <div id="msgSuccess" role="alert"></div>
+
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <div class="label-float">
+          <input name= "nome" type="text" id="nome"  required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="usuario">Email</label>
+        <div class="label-float">
+          <input name="email" type="email" id="email"  required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="usuario">Idade</label>
+        <div class="label-float">
+          <input name="idade" type="password" id="pass"  required />
+        </div>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="senha">Senha</label>
+        <div class="label-float">
+          <input " type="password" id="senha" placeholder=" " required />
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmSenha">Confirmar Senha</label>
+        <div class="label-float">
+          <input name="password type="password" id="confirmSenha" placeholder=" " required />
+          <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+      </div> -->
+
+      <div class="justify-center">
+        <button type="submit">Cadastrar</button>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- <script src="{% static 'js/signup.js'%}"></script> -->
+</body>
+
+</html>

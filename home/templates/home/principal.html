@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreiras | Tec</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\Principal.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navegação">
+            <img class="novologo" src="{% static 'images\newlogo.png'%}"></div>
+            <a href="{%url 'register' %}" class="curriculo">Cadastar curriculo </a>
+            <a href="{% static 'login\templates\login\signin.html' %}"><button class="login">Login</button></a>
+            <img class="dicas" src="{% static 'images/Capturar.PNG' %}">
+        </nav>
+    </header>
+
+    <div class="video">
+        <video autoplay loop muted plays-inline>
+            <source src="{% static 'images\video1.mp4'%}" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="txt-animado">
+        Quer saber <span class="txt-ani"></span>
+    </div>
+
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-building-fill"></i></span>
+                    <span class="txt-link">Vagas</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-lightbulb-fill"></i></span>
+                    <span class="txt-link">Teste Vocacional</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-compass-fill"></i></span>
+                    <span class="txt-link">Roadmap</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-journal-bookmark-fill"></i></span>
+                    <span class="txt-link">Guia de estudos</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt-link">Configurações</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <footer class="autor">
+        <p>SITE CRIADO POR: </p>
+        <p>EZEQUIEL QUINTO</p>
+        <p>LUIZ RICARDO</p>
+        <p>THIAGO LIMA</p>
+        <p class="cop">COPYRIGHT TEL INC.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
